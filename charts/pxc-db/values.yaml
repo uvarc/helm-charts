@@ -557,7 +557,7 @@ pmm:
     limits: {}
 
 backup:
-  enabled: false
+  enabled: true
   # allowParallel: true
   image:
     repository: docker.io/percona/percona-xtradb-cluster-operator
@@ -650,15 +650,15 @@ backup:
          endpointUrl: https://machi-nas-s.hpc.virginia.edu:7480
     
 
-  schedule: []
-     # - name: "volume-backup"
-     #   schedule: "0 0 * * *"
-     #   keep: 5
-     #   storageName: percona-backup-new
-     # - name: "s3-backup"
-     #   schedule: "0 0 * * *"
-     #   keep: 5
-     #   storageName: ceph-s3-us-west
+  schedule: 
+      - name: "volume-backup"
+        schedule: "0 0 * * *"
+        keep: 5
+        storageName: percona-backup-new
+      - name: "s3-backup"
+        schedule: "0 0 * * *"
+        keep: 5
+        storageName: ceph-s3-us-west
 
 secrets:
   ## You should be overriding these with your own or specify name for clusterSecretName.

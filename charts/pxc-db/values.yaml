@@ -41,7 +41,7 @@ upgradeOptions:
   apply: disabled
   schedule: "0 4 * * *"
 enableCRValidationWebhook: false
-#tls: {}
+tls: {}
   # SANs:
   #   - pxc-1.example.com
   #   - pxc-2.example.com
@@ -643,9 +643,9 @@ backup:
        s3:
          bucket: percona-backups-test
     #     # Use credentialsSecret OR credentialsAccessKey/credentialsSecretKey
-         credentialsSecret: backup-ceph-s3
-         credentialsAccessKey: WjBMMkhZTjFKOE04STVSVlVBOUU=
-         credentialsSecretKey: VjBMNWdrR2VSRUhKQU82Rm9KU294ZERoTkl2QktjWVhBZjR1REJXRQ==
+    #     credentialsSecret: backup-ceph-s3
+         credentialsAccessKey: Z0L2HYN1J8M8I5RVUA9E
+         credentialsSecretKey: V0L5gkGeREHJAO6FoJSoxdDhNIvBKcYXAf4uDBWE
     #     region: us-west-2
          endpointUrl: https://machi-nas-s.hpc.virginia.edu:7480
     

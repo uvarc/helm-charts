@@ -3,7 +3,7 @@ entries:
   pxc-db:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2024-04-21T22:39:44.118601-04:00"
+    created: "2024-04-21T22:44:17.922944-04:00"
     description: A Helm chart for installing Percona XtraDB Cluster Databases using
       the PXC Operator.
     digest: 0f52437dc1fdc4786a9272742c8ae4878b232b81bafd48f8b681671f6d4466eb
@@ -18,6 +18,6 @@ entries:
       name: nmarukovich
     name: pxc-db
     urls:
-    - https://github.com/uvarc/helm-charts/pxc-db-1.14.1.tgz
+    - https://uvarc.github.io/helm-charts/pxc-db-1.14.1.tgz
     version: 1.14.1
-generated: "2024-04-21T22:39:44.117344-04:00"
+generated: "2024-04-21T22:44:17.92137-04:00"
